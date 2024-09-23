@@ -1,0 +1,118 @@
+import java.util.Scanner;
+
+public class questions {
+
+	public static void main(String[] args) {
+		
+			Scanner sc = new Scanner(System.in);
+		    System.out.println("Digite um número: ");
+		    int num = sc.nextInt();
+
+		    if (num >= 0) {
+		      System.out.println("O número digitado é positivo!");
+		    }
+		    else {
+		      System.out.println("O número digitado é negativo!");
+		    }
+		    sc.close();
+	
+		/*public class Main {
+		  public static void main(String[] args) {
+		    
+		    Scanner sc = new Scanner(System.in);
+		    System.out.println("Digite um número: ");
+		    int num = sc.nextInt();
+
+		    if (num % 2 == 0){
+		      System.out.println("O número digitado é par!");
+		    }
+		    else {
+		      System.out.println("O número digitado é ímpar!");
+		    }
+		    sc.close();
+		  }
+		}  */
+
+		/*public class Main {
+		  public static void main(String[] args) {
+		    
+		    Scanner sc = new Scanner(System.in);
+		    System.out.println("Digite o 1° número: ");
+		    int num1 = sc.nextInt();
+		    System.out.println("Digite o 2° número: ");
+		    int num2 = sc.nextInt();
+
+		    if (num1 % num2 == 0) {
+		     System.out.println(num1 + " é múltiplo de " + num2 + "!");
+		    }
+		    else if (num2 % num1 == 0) {
+		      System.out.println(num2 + " é múltiplo de " + num1 + "!");
+		    }
+		    else {
+		      System.out.println("Não são múltiplos!");
+		    }
+		    sc.close();
+		  }
+		} */
+
+		/*public class Main {
+		  public static void main(String[] args) {
+		    
+		    Scanner sc = new Scanner(System.in);
+		    System.out.println("Em qual horário o jogo começou? (escreva em formato de 24 horas)");
+		    int hora1 = sc.nextInt();
+		    System.out.println("Em qual horário o jogo terminou? (escreva em formato de 24 horas)");
+		    int hora2 = sc.nextInt();
+
+		    int duracaoDoJogo;
+		    
+		    switch (hora1 > hora2 ? 1 : (hora1 < hora2 ? 2 : 3)) {
+		      case 1: 
+		        duracaoDoJogo = (24 - hora1) + hora2;
+		        break;
+
+		      case 2: 
+		        duracaoDoJogo = hora2 - hora1;
+		        break;
+
+		      case 3:
+		      default:
+		        duracaoDoJogo = 24;
+		        break;
+		    }
+		    System.out.println("O jogo durou " + duracaoDoJogo + " horas.");
+		    
+		    sc.close();
+		  }
+		}*/
+
+		/*public class Main {
+		  public static void main(String[] args) {
+		    
+		    Scanner sc = new Scanner(System.in);
+		    System.out.println("Digite um número qualquer: ");
+		    float number = sc.nextFloat();
+
+		    if (number >= 0 && number <= 25) {
+		      System.out.println("O número digitado está entre 0 e 25!");
+		    }
+		    else if (number > 25 && number <= 50) {
+		      System.out.println("O número digitado está entre 25 e 50!");
+		    }
+		    else if (number > 50 && number <= 75) {
+		      System.out.println("O número digitado está entre 50 e 75!");
+		    }
+		    else if (number > 75 && number <= 100) {
+		      System.out.println("O número digitado está entre 75 e 100!");
+		    }
+		    else {
+		      System.out.println("O número digitado não está em nenhum desses intervalos!");
+		    }
+
+		    sc.close();
+		  }
+		}*/
+
+	}
+
+}
