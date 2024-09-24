@@ -1,0 +1,34 @@
+package atividades;
+
+import java.util.Scanner;
+
+public class questions4 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Horário de início do jogo: " + " " + "(Em formato 24 horas).");
+		int hour1 = sc.nextInt();
+		System.out.println("Horário do final do jogo: " + " " + "(Em formato 24 horas).");
+		int hour2 = sc.nextInt();
+		
+		int duracaoDoJogo;
+		
+		switch (hour1 > hour2 ? 1: (hour1 < hour2 ? 2:3)) {
+		case 1: 
+			duracaoDoJogo = (24 - hour1) + hour2;
+			break;
+		case 2:
+			duracaoDoJogo = hour2 - hour1;
+			break;
+		case 3:
+			default:
+				duracaoDoJogo = 24;
+				break;
+		}
+		
+		System.out.println("O jogo teve uma duração de " + duracaoDoJogo + "horas!");
+		sc.close();
+	}
+
+}
